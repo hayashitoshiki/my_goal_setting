@@ -1,0 +1,25 @@
+
+.home_back{
+  background-image: image-url("cafe_back.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+.home_title{
+  color: #ffffff;
+  font-size: 100px;
+  font-family: "ＭＳ 明朝",monospace;
+  margin-top: 160px;
+}
+.home_tag{
+  color: #ffffff;
+  font-size: 60px;
+  font-family: 'Impact',sans-serif;
+  text-align: right;
+  display: inline;
+}
+footer{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
