@@ -1,24 +1,10 @@
-# README
+# 自己実現のための目標管理ツール
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+年単位の大きなものから1週間単位の小さなものまで目標設定を行い
 
-* Ruby version
+自己実現をするためのwebツール
 
-* System dependencies
+年→月→日と細かく目標設定
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+そしてその経過を見てチェック
