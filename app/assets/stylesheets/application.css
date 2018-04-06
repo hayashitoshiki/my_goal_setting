@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+.font {
+  font-size: 50px;
+  font-family: 'Impact', sans-serif;
+  color: #ffffff;
+}
+
+.back {
+  background-image: image-url("cafe_back.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.goal {
+  background-color: #ffffff;
+  color: #000000;
+  border-bottom: solid 6px #aac5de;
+  border-radius: 9px;
+}
