@@ -1,11 +1,11 @@
-.font{
-  font-size: 50px;
-  font-family: 'Impact',sans-serif;
-  color: #ffffff;
-}
+
 .back{
   background-image: image-url("cafe_back.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
+}
+
+li{
+  list-style: none;
 }

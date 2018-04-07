@@ -9,7 +9,7 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
+ **= require jquery-ui/datepicker
  *= require_tree .
  *= require_self
  */
@@ -30,6 +30,6 @@
 .goal {
   background-color: #ffffff;
   color: #000000;
-  border-bottom: solid 6px #aac5de;
+  border-bottom: solid 10px #aac5de;
   border-radius: 9px;
 }
