@@ -1,10 +1,12 @@
-<body class="back">
+
   <div class="font">
     <p>Setting(DAY)</p>
     <!--現在の日時から目標の週まで日程一覧表示-->
+    <%= form_tag("/setting/test",{:method=>"get"})do %>
+
     <% @dates.each do |date| %>
       <li>
-        &emsp;&emsp;<%= date %><input type="text" name="music" size="30" style="font-size:40px" autocomplete="off">
+        &emsp;&emsp;<%= date %><input type="text" name="goal_day[]" size="30" style="font-size:40px" autocomplete="off">
       </li>
     <% end %>
     <span class="brack">
@@ -15,6 +17,7 @@
         <%= @goal_final %>(<%= @goal_day %>)</nobr>
     </br>
   </span>
-  <%= link_to("Setting Complete!!","/", :style =>" text-decoration:none; color: #ffffff; float: right") %>
+  <!--<%= link_to("Setting Complete!!","/", :style =>" text-decoration:none; color: #ffffff; float: right") %>-->
+    <input type="submit" value="NEXT" class="button_setting">
+  <% end %>
 </div>
-</body>

@@ -1,2 +1,14 @@
-<h1>List#list_top</h1>
-<p>Find me in app/views/list/list_top.html.erb</p>
+<h1>目標一覧</h1>
+
+<table>
+<tr>
+  <td>目標</td>
+  <td>期限</td>
+</tr>
+<% @goals.each do |goal| %>
+  <tr>
+    <td><%= link_to(goal.last,"/") %></td>
+    <td><%= goal.last_date %></td>
+  </tr>
+<% end %>
+</table>

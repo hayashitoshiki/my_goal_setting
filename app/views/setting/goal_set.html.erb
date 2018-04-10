@@ -1,17 +1,14 @@
-<body class="back">
-  <div class="font">
-    <!--短期-->
-    <h1>Goal setting</h1>
-    <%= form_tag("/setting/day",{:method=>"get"})do %>
+<div class="font">
+  <!--短期-->
+  <h1>Goal setting</h1>
+  <%= form_tag("/setting/day",{:method=>"get"})do %>
     <nobr>Goal</nobr>&emsp;
     <input type="text" size="30" style="font-size:40px" name="goal_final">
-  </br>
+    </br>
     <a>period</a>
-    <input class="date-picker" type="text"size="10" style="font-size:40px"  name="goal_day" autocomplete="off">
-  </br>
-    <!--<input type="submit" value="NEXT" style="font-size:50px">-->
-
-    <input type="submit" value="NEXT"  class="button_setting">
-<%end%>
-  </div>
-</body>
+    <input class="date-picker" type="text" size="10" style="font-size:40px" name="goal_day" autocomplete="off">
+    </br>
+<!--<input type="submit" value="NEXT" style="font-size:50px">-->
+    <input type="submit" value="NEXT" class="button_setting">
+  <%end%>
+</div>
