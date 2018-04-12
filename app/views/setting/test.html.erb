@@ -1,9 +1,13 @@
 <h1>テスト</h1>
   <div class="font">
-  <% @goal_days.each do |day,text| %>
+    <p>目標計画</p>
+  <% @goal_days.each do |goal| %>
+    <% goal.days.each do |a,b| %>
     <li>
-      <%= day %>
-      <%= text %>
+        &emsp;&emsp;<%= a%>
+      <%= b%>
     </li>
-  <% end %>
+<% end%>
+  <p><%= goal.goals %></p>
+  <%end%>
 </div>

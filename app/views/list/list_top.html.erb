@@ -7,8 +7,7 @@
 </tr>
 <% @goals.each do |goal| %>
   <tr>
-    <td><%= link_to(goal.last,"/") %></td>
-    <td><%= goal.last_date %></td>
+    <td><%= link_to(goal.goals,"/") %></td>
   </tr>
 <% end %>
 </table>

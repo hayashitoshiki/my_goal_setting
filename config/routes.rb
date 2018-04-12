@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'list/top' => 'list#list_top'
 
+  post 'setting/create' => 'setting#create'
   get 'setting/test' => 'setting#test'
   get 'setting/day' => 'setting#day_setting'
   get 'setting/set' => 'setting#goal_set'

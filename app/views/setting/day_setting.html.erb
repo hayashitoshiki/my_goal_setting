@@ -2,7 +2,7 @@
   <div class="font">
     <p>Setting(DAY)</p>
     <!--現在の日時から目標の週まで日程一覧表示-->
-    <%= form_tag("/setting/test",{:method=>"get"})do %>
+    <%= form_tag("/setting/create")do %>
 
     <% @dates.each do |date| %>
       <li>
@@ -14,7 +14,7 @@
     </span>
     <span class="goal">
       <nobr>
-        <%= @goal_final %>(<%= @goal_day %>)</nobr>
+        <%= @goal_finals %>(<%= @goal_day %>)</nobr>
     </br>
   </span>
   <!--<%= link_to("Setting Complete!!","/", :style =>" text-decoration:none; color: #ffffff; float: right") %>-->
