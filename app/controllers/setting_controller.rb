@@ -27,9 +27,11 @@ def day_setting
 
   def create
     final = @@goal_final
+
+    date = @@goal_fainal_date
+      f = (Date.strptime(date,'%Y-%m-%d')).strftime("%m月%d日")
     day = Array.new
     i = 0
-    b = "テスト"
 
     params[:goal_day].each do |a|
       if a.present?
@@ -39,15 +41,8 @@ def day_setting
       i+=1
     end
 
-    goal_set = Goal.new(goals:final, days:day)
+    goal_set = Goal.new(goals:final, period:f, days:day)
     goal_set.save
-    p goal_set
-    redirect_to("/setting/test")
+    redirect_to("/")
   end
-
-  def test
-
-     finals = @@goal_final
-     @goal_days = Goal.where(goals:finals)
-   end
 end

@@ -1,0 +1,9 @@
+<div class="font">
+  <p>Goal Plan</p>
+  <% @goal.days.each do |a,b| %>
+    <li>
+      &emsp;&emsp;<%= a %><%= b %>
+    </li>
+  <% end%>
+  <li><%= @goal.period %><%= @goal.goals %></li>
+</div>

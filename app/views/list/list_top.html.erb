@@ -1,13 +1,19 @@
-<h1>目標一覧</h1>
+<h1 class = "font">Goal List</h1>
 
 <table>
 <tr>
-  <td>目標</td>
-  <td>期限</td>
+  <td>GOAL</td>
+  <td>PERIOD</td>
 </tr>
 <% @goals.each do |goal| %>
   <tr>
-    <td><%= link_to(goal.goals,"/") %></td>
+    <td><%= link_to(goal.goals,"/list/goal_details/#{goal.id}") %></td>
+    <td><%= button_to("削除", "/list/destroy/#{goal.id}", method: :post, data: {confirm: "#{goal.goals}を本当に削除しますか？"}) %></td>
   </tr>
 <% end %>
 </table>
+<footer>
+  <span class="home_tag">
+         <!--ホームへ-->
+    <%= link_to("HOME","/", :style =>" text-decoration:none; color: #ffffff") %>&emsp;
+</footer>
